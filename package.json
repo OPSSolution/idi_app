@@ -1,0 +1,21 @@
+{
+  "name": "idi-app-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IDI APP mobile application for iOS and Android",
+  "scripts": {
+    "sync": "cap sync",
+    "copy": "cap copy",
+    "ios": "cap open ios",
+    "android": "cap open android",
+    "doctor": "cap doctor"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.4.1",
+    "@capacitor/core": "8.4.1",
+    "@capacitor/ios": "8.4.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.1"
+  }
+}

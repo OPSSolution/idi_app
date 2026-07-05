@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IDI APP</string>
+    <string name="title_activity_main">IDI APP</string>
+    <string name="package_name">org.idiassociation.app</string>
+    <string name="custom_url_scheme">org.idiassociation.app</string>
+</resources>

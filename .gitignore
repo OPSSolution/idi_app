@@ -1,0 +1,23 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# iOS
+ios/App/Pods/
+ios/App/build/
+ios/App/DerivedData/
+ios/**/xcuserdata/
+ios/**/*.xcworkspace/xcuserdata/
+ios/**/.DS_Store
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/*.iml
+android/.idea/
+android/captures/
+
+.DS_Store

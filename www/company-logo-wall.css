@@ -1,0 +1,64 @@
+.logo,
+.profile-logo {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.directory-view-toggle button[data-directory-view="logos"] span { display: inline; }
+
+.public-directory-section[data-directory-view="logos"] .public-company-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.public-directory-section[data-directory-view="logos"] .public-directory-columns { display: none; }
+
+.public-directory-section[data-directory-view="logos"] .public-company-card {
+  min-width: 0;
+  padding: 14px 10px 12px;
+  text-align: center;
+}
+
+.public-directory-section[data-directory-view="logos"] .public-company-head {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.public-directory-section[data-directory-view="logos"] .public-company-head .logo {
+  width: 78px;
+  height: 78px;
+  border-radius: 18px;
+  box-shadow: 0 7px 18px rgba(20, 43, 90, .15);
+}
+
+.public-directory-section[data-directory-view="logos"] .public-company-head > div { width: 100%; }
+.public-directory-section[data-directory-view="logos"] .public-company-head h3 { min-height: 34px; margin: 0; line-height: 1.35; }
+.public-directory-section[data-directory-view="logos"] .public-company-head p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.public-directory-section[data-directory-view="logos"] .public-membership { position: static; }
+.public-directory-section[data-directory-view="logos"] .public-company-card > p,
+.public-directory-section[data-directory-view="logos"] .public-company-card > .tags { display: none; }
+.public-directory-section[data-directory-view="logos"] .public-card-bottom { justify-content: center; margin-top: 10px; }
+.public-directory-section[data-directory-view="logos"] .public-card-bottom > span { display: none; }
+
+.logo-view-note {
+  max-width: 1120px;
+  margin: 0 auto 14px;
+  padding: 10px 13px;
+  border-radius: 9px;
+  background: #eef4ff;
+  color: #173f96;
+  font-size: 10px;
+}
+
+.logo-required-mark { color: #c43232; }
+
+@media (max-width: 980px) {
+  .public-directory-section[data-directory-view="logos"] .public-company-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .public-directory-section[data-directory-view="logos"] .public-company-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .public-directory-section[data-directory-view="logos"] .public-company-head .logo { width: 68px; height: 68px; }
+}

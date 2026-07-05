@@ -1,0 +1,19 @@
+.workflow-modal{width:min(720px,calc(100vw - 32px));max-height:90vh;overflow:auto}
+.workflow-modal form{display:grid;gap:16px}
+.workflow-modal textarea{min-height:110px;resize:vertical}
+.workflow-section{padding:18px;border:1px solid #e5e9f2;border-radius:16px;background:#f9fbff}
+.workflow-section h3{margin:0 0 14px;color:#173f96;font-size:15px}
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice-grid label{display:flex;gap:9px;align-items:flex-start;padding:12px;border:1px solid #dfe5ef;border-radius:12px;background:#fff}
+.choice-grid input{width:auto;margin-top:2px}
+.archive-list{display:grid;gap:10px;margin-top:16px}
+.archive-item{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px;border:1px solid #e4e8f0;border-radius:13px}
+.archive-item strong,.archive-item span{display:block}.archive-item span{color:#778095;font-size:13px;margin-top:3px}
+.archive-item em{font-style:normal;color:#16846c;background:#eaf8f4;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.event-meta-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.event-meta-grid div{background:#f3f6fb;border-radius:12px;padding:12px}.event-meta-grid span{display:block;color:#7d8699;font-size:11px}.event-meta-grid strong{display:block;margin-top:4px}
+.calendar-board{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;padding:16px;background:#fff;border:1px solid #e5e9f2;border-radius:16px}
+.calendar-day{min-height:84px;padding:8px;border-radius:10px;background:#f7f9fc;color:#7b8496;font-size:12px}.calendar-day.has-event{background:#edf3ff;color:#173f96}.calendar-day b{display:block;margin-bottom:10px}.calendar-day span{display:block;font-size:10px;font-weight:700}
+.directory-advanced{display:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 18px;padding:16px;background:#f6f8fc;border:1px solid #e2e7f0;border-radius:14px}.directory-advanced.show{display:grid}
+.page-complete-note{display:flex;gap:12px;align-items:center;margin:0 0 18px;padding:13px 15px;background:#edf8f4;color:#13715f;border:1px solid #cdebe3;border-radius:13px;font-size:13px}
+@media(max-width:720px){.choice-grid,.event-meta-grid,.directory-advanced{grid-template-columns:1fr}.archive-item{grid-template-columns:1fr}.calendar-board{grid-template-columns:repeat(2,1fr)}}

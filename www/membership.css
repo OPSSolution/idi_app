@@ -1,0 +1,17 @@
+.news-tier-grid{grid-template-columns:repeat(4,1fr)}
+.guest-dot{background:#f3f4f7;color:#808b9e}
+.audience-options{background:#f8f9fc;border-radius:10px;padding:13px;margin:4px 0 14px}
+.audience-options p{margin:0 0 10px;font-size:11px;font-weight:700}
+.audience-options label{display:inline-flex;align-items:center;gap:6px;margin:0 16px 6px 0;font-weight:600}
+.audience-options input{width:auto}.audience-options .all-audience{color:var(--primary)}
+.membership-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.membership-summary article{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px;display:flex;align-items:center;gap:12px}
+.membership-summary article>span{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-weight:800}
+.membership-summary .vip>span{background:#251f4a;color:#d8c48b}.membership-summary .premium>span{background:#eeeaff;color:var(--primary)}
+.membership-summary .standard>span{background:#e5f7f0;color:var(--green)}.membership-summary .guest>span{background:#f0f2f6;color:#7d889a}
+.membership-summary strong{font:800 20px Manrope}.membership-summary p{margin:2px 0 0;color:var(--muted);font-size:9px}
+.membership-badge{display:inline-block;border-radius:12px;padding:5px 9px;font-size:9px;font-weight:700}
+.membership-badge.vip{background:#251f4a;color:#e4d29c}.membership-badge.premium{background:#eeeaff;color:var(--primary)}
+.membership-badge.standard{background:#e5f7f0;color:var(--green)}.membership-badge.guest{background:#f0f2f6;color:#6f7c90}
+@media(max-width:1000px){.news-tier-grid,.membership-summary{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.news-tier-grid,.membership-summary{grid-template-columns:1fr}}
