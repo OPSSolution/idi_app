@@ -42,6 +42,28 @@ Update files inside `www/`, then run:
 pnpm sync
 ```
 
+## Connecting to a real database (Supabase)
+
+Auth, the company directory, news, events, and membership/renewal data can be backed by a real
+[Supabase](https://supabase.com) project instead of the hardcoded demo data in `www/app.js`.
+
+1. Create a free project at supabase.com.
+2. Open the project's SQL Editor and run `supabase/schema.sql` — it creates the tables, Row Level
+   Security policies, and seeds the demo companies/news/events.
+3. In **Authentication → Users**, create the demo accounts listed at the bottom of `schema.sql`
+   (e.g. `admin@idiapp.org`, `sokha@uniholding.com`, ...). Give every account except the admin the
+   password `IdiDemo#2026` (this is the shared password the app's one-click demo login buttons use);
+   give the admin account the password shown in the app UI. After creating each user, run the
+   matching `update public.profiles ...` statement from the bottom of `schema.sql` so their tier,
+   role, and permissions match the app.
+4. Copy the project's URL and `anon` public API key (Settings → API) into `www/supabase-config.js`.
+5. Reload the app — companies/news/events now load from Postgres, and login goes through Supabase
+   Auth. If `supabase-config.js` is left unfilled, the app keeps working exactly as before using the
+   hardcoded demo data, so there's no hard dependency on Supabase being set up.
+
+Everything else (investment pipeline, deals, conversations, staff roles, pitches, campaigns,
+funding requests, and the KHQR/PayWay billing simulation) remains local demo data.
+
 ## Production services still required
 
 - Real authentication and database
